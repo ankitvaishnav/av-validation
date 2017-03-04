@@ -1,0 +1,23 @@
+{
+  "name": "av-validation",
+  "version": "1.0.0",
+  "description": "A nodejs package for request validation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitvaishnav/av-validation.git"
+  },
+  "keywords": [
+    "nodejs",
+    "sailsjs"
+  ],
+  "author": "AV <ankitvaishnav.iitb1991@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankitvaishnav/av-validation/issues"
+  },
+  "homepage": "https://github.com/ankitvaishnav/av-validation#readme"
+}
