@@ -1,6 +1,6 @@
 {
   "name": "av-validation",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A nodejs package for request validation.",
   "main": "index.js",
   "scripts": {

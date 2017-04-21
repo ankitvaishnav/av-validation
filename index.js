@@ -1,12 +1,18 @@
+require('./src/routes')(app, path);
 
 module.exports = {
 
   email: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
 
-  validate: function (parameters, data, log, cb){
+  validate: function (parameters, data, fillable, log, cb){
 
       if (parameters && typeof(parameters) === 'object') {
-
+        /* Check the fillables */
+        for(var index in data) {
+            if(fillable.indexOf(index) == -1){
+                delete data[index];
+            }
+        }
         for (var par in parameters) {
 
            module.exports.logger('Checking '+par+' for '+parameters[par], log);
